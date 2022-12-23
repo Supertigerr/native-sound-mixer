@@ -180,6 +180,7 @@ namespace SoundMixer
 		Napi::ObjectWrap<AudioSessionObject>::Unwrap(result)->pSession = session;
 		result.Set("name", session->name());
 		result.Set("appName", session->path());
+		result.Set("processId", session->processId());
 
 		return result;
 	}

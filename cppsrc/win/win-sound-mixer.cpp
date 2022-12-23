@@ -350,6 +350,17 @@ namespace WinSoundMixer
 		return "";
 	}
 
+	std::string WinSoundMixer::AudioSession::processId()
+	{
+		DWORD pId;
+		if (control->GetProcessId(&pId) == S_OK)
+		{
+			return std::to_string(pId);
+		}	
+
+		return "";
+	}
+
 	ISimpleAudioVolume *AudioSession::getAudioVolume()
 	{
 		ISimpleAudioVolume *volume;

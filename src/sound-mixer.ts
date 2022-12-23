@@ -55,6 +55,7 @@ export declare class AudioSession {
 	public mute: boolean;
 	public readonly name: string;
 	public readonly appName: string;
+	public readonly processId: string;
 }
 
 export declare type SoundMixer = {

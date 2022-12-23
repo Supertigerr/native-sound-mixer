@@ -35,6 +35,7 @@ namespace WinSoundMixer
 		std::string id();
 		std::string name();
 		std::string path();
+		std::string processId();
 		AudioSessionState state();
 
 	protected:
